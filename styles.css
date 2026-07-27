@@ -1,0 +1,106 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Rethink Sans", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #00b060;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+td,
+p {
+  color: #c0c0c0;
+}
+
+p {
+  padding: 0.25rem 0;
+}
+
+h2 {
+  padding: 2rem 0 0.5rem 0;
+}
+
+.images {
+  display: flex;
+  overflow-x: scroll;
+  border-radius: 1rem;
+  scroll-snap-type: proximity;
+}
+
+.images * {
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: width 400ms;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-right: -1rem;
+}
+
+.images *:hover {
+  width: 600px;
+}
+
+.image-top {
+  object-position: top;
+}
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+  border-radius: 1rem;
+  overflow: hidden;
+  align-self: stretch;
+  background-color: #212121;
+}
+
+th {
+  padding: 0.5rem 1rem;
+  background-color: #007020;
+  border: 1px solid #005000;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #1a1a1a;
+}
+
+td:hover {
+  color: white;
+}
+
+.links {
+  margin-left: 1rem;
+}
+
+.links li a {
+  color: #00b060;
+}
+
+.links li a::after {
+  content: " ↗";
+}
