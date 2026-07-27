@@ -45,7 +45,6 @@ h2 {
 .image {
   display: flex;
   border-radius: 1rem;
-  scroll-snap-type: proximity;
   overflow: hidden;
   object-fit: cover;
   height: 300px;
