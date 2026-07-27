@@ -42,26 +42,13 @@ h2 {
   padding: 2rem 0 0.5rem 0;
 }
 
-.images {
+.image {
   display: flex;
-  overflow-x: scroll;
   border-radius: 1rem;
   scroll-snap-type: proximity;
-}
-
-.images * {
-  flex-shrink: 0;
-  width: 400px;
-  height: 400px;
+  overflow: hidden;
   object-fit: cover;
-  transition: width 400ms;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  margin-right: -1rem;
-}
-
-.images *:hover {
-  width: 600px;
+  height: 300px;
 }
 
 .image-top {
@@ -97,10 +84,10 @@ td:hover {
   margin-left: 1rem;
 }
 
-.links li a {
+a {
   color: #00b060;
 }
 
-.links li a::after {
+a::after {
   content: " ↗";
 }
